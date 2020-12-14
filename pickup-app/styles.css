@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
+@keyframes hop-down {
+  0% {
+    transform: scale(.1) translateY(200px);
+  }
+
+
+  100% {
+    transform: scale(1) translateY(0px;);
+  }
+
+}
+
+/* .pop-up-layer {
+  opacity: 0%;
+  display: none; /*we will change this with javascript*/
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(44, 62, 80,.6); /*this is our overlay color*/
+  z-index: 100; /*makes our layer above the rest of the page.*/
+}
+
+.pop-up {
+  position: fixed; /*this makes our pop-up attached to the screen*/
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto; /*aligns our popup to the center*/
+  height: 15rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  border-radius: 16px;
+  box-shadow: 0 4px 3px rgba(0,0,0,.3);
+  z-index: 10000000; /*Makes our pop-up above everything*/
+  animation: hop-down;
+  animation-duration: 100ms;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.pop-up-title {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 0;
+  left: 0;
+  background: white;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  font-family: roboto;
+}
+
+.hero {
+  height: calc(99vh - 50px);
+  width: 100%;
+  background: linear-gradient(rgba(44, 62, 80,.6), rgba(44, 62, 80,.6)), url('https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555375625/shape/mentalfloss/whitemen_prim.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay-text {
+  z-index: 5;
+  height: calc(100vh - 50px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Squada', sans-serif;
+}
+
+.hero-overlay-text h1 {
+  margin-top: 0rem;
+  font-size: 10rem;
+  font-family: 'cursive';
+  font-weight: 300;
+}
+
+.btn-cta {
+  background-color: rgba(253, 253, 253, 1);
+  color: #616161;
+  border-radius: 40px;
+  border: 1px solid #C1C1C1;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 15rem;
+  text-align: center;
+  transition: all 200ms;
+  box-shadow: 0 2px 0px rgba(0,0,0,.3);
+}
+
+.btn-cta:hover {
+  /*transform: scale(1.02);*/
+  box-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
+
+
+.subscribe-3 {
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faq-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+} */
+
+/**************
+Footer
+**************/
+
+.footer {
+  height: 30vh;
+  margin: 0;
+  background: #34495e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cta p {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.footer-copyright {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.more-links {
+  cursor: pointer;
+}
+
+.nav-btn.right {
+  margin-left: 80%; /*made this smaller*/
+  transition: all 300ms;
+}
+
+
+.nav-links {
+  height: 50px;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: roboto; /*made font-family roboto*/
+}
+
+.iconDetails {
+margin-left:40%;
+float:left;
+height:300px;
+width:300px;
+}
+
+.container2 {
+ width:900px;
+ height:500px;
+ padding:1%;
+   float:left;
+}
+h4{margin:0}
+.left {float:left;width:615px;}
+.right {float:left;margin:0 0 0 5px;width:200px;}
+
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {box-sizing: border-box}
+input[type=text], input[type=password] {
+   width: 100%;
+   font-size: 28px;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+}
+label{
+   font-size: 15px;
+}
+input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+}
+hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+}
+/*  */
+button:hover {
+   opacity:1;
+}
+.cancel {
+   padding: 14px 20px;
+   background-color: #ff3d2f;
+}
+.formContainer {
+   padding: 16px;
+}
+.formContainer p{
+   font-size: 28px;
+}
